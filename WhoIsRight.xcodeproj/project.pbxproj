@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A9197E417AB4F858DF24F67 /* Pods_WhoIsRight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3F5FC92275B3616A2E0EEF /* Pods_WhoIsRight.framework */; };
+		3F8733DDA6628599E11BB0E5 /* Pods_WhoIsRightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17667D741E5209393407BB2B /* Pods_WhoIsRightTests.framework */; };
+		9A07A6F51F88F8580014286C /* ReactiveReSwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07A6F41F88F8580014286C /* ReactiveReSwiftBridge.swift */; };
+		9A07A6F81F88FD980014286C /* DuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07A6F71F88FD980014286C /* DuelViewController.swift */; };
+		9A07A6FA1F89EE090014286C /* DuelFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07A6F91F89EE090014286C /* DuelFeature.swift */; };
+		9A07A6FC1F89EF680014286C /* DuelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07A6FB1F89EF680014286C /* DuelState.swift */; };
+		9A07A7001F89F8F30014286C /* PlayerWasRightAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07A6FF1F89F8F30014286C /* PlayerWasRightAction.swift */; };
+		9A18E3CE1F8A226F00AB0BB4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18E3CD1F8A226F00AB0BB4 /* AppState.swift */; };
+		9A18E3D21F8A2CF600AB0BB4 /* DuelReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18E3D11F8A2CF600AB0BB4 /* DuelReducer.swift */; };
+		9A18E3D91F8A315C00AB0BB4 /* DispatcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18E3D81F8A315C00AB0BB4 /* DispatcherProtocol.swift */; };
+		9A18E3DB1F8A317200AB0BB4 /* ReFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18E3DA1F8A317200AB0BB4 /* ReFeature.swift */; };
+		9A18E3DD1F8A5FA800AB0BB4 /* AnyReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18E3DC1F8A5FA800AB0BB4 /* AnyReducer.swift */; };
+		9A18E3DF1F8A604800AB0BB4 /* ReVISPERApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18E3DE1F8A604800AB0BB4 /* ReVISPERApplication.swift */; };
+		9A18E3E11F8A607800AB0BB4 /* ReducerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18E3E01F8A607800AB0BB4 /* ReducerProvider.swift */; };
 		9A74D5061F88AB9200623191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74D5051F88AB9200623191 /* AppDelegate.swift */; };
-		9A74D5081F88AB9200623191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74D5071F88AB9200623191 /* ViewController.swift */; };
-		9A74D50B1F88AB9200623191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A74D5091F88AB9200623191 /* Main.storyboard */; };
 		9A74D50D1F88AB9200623191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A74D50C1F88AB9200623191 /* Assets.xcassets */; };
-		9A74D5101F88AB9200623191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A74D50E1F88AB9200623191 /* LaunchScreen.storyboard */; };
 		9A74D51B1F88AB9200623191 /* WhoIsRightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74D51A1F88AB9200623191 /* WhoIsRightTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,16 +37,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036EF0610393AFEA450F9BC2 /* Pods-WhoIsRight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoIsRight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoIsRight/Pods-WhoIsRight.debug.xcconfig"; sourceTree = "<group>"; };
+		0F3F5FC92275B3616A2E0EEF /* Pods_WhoIsRight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoIsRight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17667D741E5209393407BB2B /* Pods_WhoIsRightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoIsRightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		736F5722A97E30E095D7ED33 /* Pods-WhoIsRightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoIsRightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoIsRightTests/Pods-WhoIsRightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A07A6F41F88F8580014286C /* ReactiveReSwiftBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveReSwiftBridge.swift; sourceTree = "<group>"; };
+		9A07A6F71F88FD980014286C /* DuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuelViewController.swift; sourceTree = "<group>"; };
+		9A07A6F91F89EE090014286C /* DuelFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuelFeature.swift; sourceTree = "<group>"; };
+		9A07A6FB1F89EF680014286C /* DuelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuelState.swift; sourceTree = "<group>"; };
+		9A07A6FF1F89F8F30014286C /* PlayerWasRightAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWasRightAction.swift; sourceTree = "<group>"; };
+		9A18E3CD1F8A226F00AB0BB4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9A18E3D11F8A2CF600AB0BB4 /* DuelReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuelReducer.swift; sourceTree = "<group>"; };
+		9A18E3D81F8A315C00AB0BB4 /* DispatcherProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatcherProtocol.swift; sourceTree = "<group>"; };
+		9A18E3DA1F8A317200AB0BB4 /* ReFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReFeature.swift; sourceTree = "<group>"; };
+		9A18E3DC1F8A5FA800AB0BB4 /* AnyReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyReducer.swift; sourceTree = "<group>"; };
+		9A18E3DE1F8A604800AB0BB4 /* ReVISPERApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReVISPERApplication.swift; sourceTree = "<group>"; };
+		9A18E3E01F8A607800AB0BB4 /* ReducerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerProvider.swift; sourceTree = "<group>"; };
 		9A74D5021F88AB9200623191 /* WhoIsRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoIsRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A74D5051F88AB9200623191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A74D5071F88AB9200623191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A74D50A1F88AB9200623191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A74D50C1F88AB9200623191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9A74D50F1F88AB9200623191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A74D5111F88AB9200623191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A74D5161F88AB9200623191 /* WhoIsRightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhoIsRightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A74D51A1F88AB9200623191 /* WhoIsRightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoIsRightTests.swift; sourceTree = "<group>"; };
 		9A74D51C1F88AB9200623191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0B7D798FEBB90F4D23731F /* Pods-WhoIsRight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoIsRight.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoIsRight/Pods-WhoIsRight.release.xcconfig"; sourceTree = "<group>"; };
+		FC48D5B62E4D464E447A25B5 /* Pods-WhoIsRightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoIsRightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoIsRightTests/Pods-WhoIsRightTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9197E417AB4F858DF24F67 /* Pods_WhoIsRight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +77,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8733DDA6628599E11BB0E5 /* Pods_WhoIsRightTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98D686063389A16DBFB44989 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				036EF0610393AFEA450F9BC2 /* Pods-WhoIsRight.debug.xcconfig */,
+				9C0B7D798FEBB90F4D23731F /* Pods-WhoIsRight.release.xcconfig */,
+				736F5722A97E30E095D7ED33 /* Pods-WhoIsRightTests.debug.xcconfig */,
+				FC48D5B62E4D464E447A25B5 /* Pods-WhoIsRightTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A07A6F61F88FD8A0014286C /* Duel */ = {
+			isa = PBXGroup;
+			children = (
+				9A07A6F71F88FD980014286C /* DuelViewController.swift */,
+				9A07A6F91F89EE090014286C /* DuelFeature.swift */,
+				9A07A6FB1F89EF680014286C /* DuelState.swift */,
+				9A07A6FF1F89F8F30014286C /* PlayerWasRightAction.swift */,
+				9A18E3D11F8A2CF600AB0BB4 /* DuelReducer.swift */,
+			);
+			path = Duel;
+			sourceTree = "<group>";
+		};
+		9A18E3D71F8A315C00AB0BB4 /* ReVISPER */ = {
+			isa = PBXGroup;
+			children = (
+				9A18E3D81F8A315C00AB0BB4 /* DispatcherProtocol.swift */,
+				9A18E3DA1F8A317200AB0BB4 /* ReFeature.swift */,
+				9A18E3DC1F8A5FA800AB0BB4 /* AnyReducer.swift */,
+				9A18E3DE1F8A604800AB0BB4 /* ReVISPERApplication.swift */,
+				9A18E3E01F8A607800AB0BB4 /* ReducerProvider.swift */,
+			);
+			path = ReVISPER;
+			sourceTree = "<group>";
+		};
 		9A74D4F91F88AB9100623191 = {
 			isa = PBXGroup;
 			children = (
 				9A74D5041F88AB9200623191 /* WhoIsRight */,
 				9A74D5191F88AB9200623191 /* WhoIsRightTests */,
 				9A74D5031F88AB9200623191 /* Products */,
+				98D686063389A16DBFB44989 /* Pods */,
+				B94D2AC093E4872601E7CFB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +142,13 @@
 		9A74D5041F88AB9200623191 /* WhoIsRight */ = {
 			isa = PBXGroup;
 			children = (
+				9A18E3D71F8A315C00AB0BB4 /* ReVISPER */,
+				9A07A6F61F88FD8A0014286C /* Duel */,
 				9A74D5051F88AB9200623191 /* AppDelegate.swift */,
-				9A74D5071F88AB9200623191 /* ViewController.swift */,
-				9A74D5091F88AB9200623191 /* Main.storyboard */,
+				9A18E3CD1F8A226F00AB0BB4 /* AppState.swift */,
 				9A74D50C1F88AB9200623191 /* Assets.xcassets */,
-				9A74D50E1F88AB9200623191 /* LaunchScreen.storyboard */,
 				9A74D5111F88AB9200623191 /* Info.plist */,
+				9A07A6F41F88F8580014286C /* ReactiveReSwiftBridge.swift */,
 			);
 			path = WhoIsRight;
 			sourceTree = "<group>";
@@ -96,6 +162,15 @@
 			path = WhoIsRightTests;
 			sourceTree = "<group>";
 		};
+		B94D2AC093E4872601E7CFB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F3F5FC92275B3616A2E0EEF /* Pods_WhoIsRight.framework */,
+				17667D741E5209393407BB2B /* Pods_WhoIsRightTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A74D51F1F88AB9200623191 /* Build configuration list for PBXNativeTarget "WhoIsRight" */;
 			buildPhases = (
+				268CCB518C1B0806FD8A103F /* [CP] Check Pods Manifest.lock */,
 				9A74D4FE1F88AB9200623191 /* Sources */,
 				9A74D4FF1F88AB9200623191 /* Frameworks */,
 				9A74D5001F88AB9200623191 /* Resources */,
+				9F426DA86E11DF81A3089E76 /* [CP] Embed Pods Frameworks */,
+				D7B2E86FE638E9039A1635E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A74D5221F88AB9200623191 /* Build configuration list for PBXNativeTarget "WhoIsRightTests" */;
 			buildPhases = (
+				B48F0F4B48F5B4645797CA23 /* [CP] Check Pods Manifest.lock */,
 				9A74D5121F88AB9200623191 /* Sources */,
 				9A74D5131F88AB9200623191 /* Frameworks */,
 				9A74D5141F88AB9200623191 /* Resources */,
+				D5808A8B4A9FC2C17571A2AC /* [CP] Embed Pods Frameworks */,
+				9F18CE5224DA1C879240CB00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A74D5101F88AB9200623191 /* LaunchScreen.storyboard in Resources */,
 				9A74D50D1F88AB9200623191 /* Assets.xcassets in Resources */,
-				9A74D50B1F88AB9200623191 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,13 +273,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		268CCB518C1B0806FD8A103F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhoIsRight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F18CE5224DA1C879240CB00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoIsRightTests/Pods-WhoIsRightTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F426DA86E11DF81A3089E76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhoIsRight/Pods-WhoIsRight-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveReSwift/ReactiveReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/VISPER/VISPER.framework",
+				"${BUILT_PRODUCTS_DIR}/VISPER-CommandBus/VISPER_CommandBus.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VISPER.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VISPER_CommandBus.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoIsRight/Pods-WhoIsRight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B48F0F4B48F5B4645797CA23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhoIsRightTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5808A8B4A9FC2C17571A2AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoIsRightTests/Pods-WhoIsRightTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B2E86FE638E9039A1635E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoIsRight/Pods-WhoIsRight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A74D4FE1F88AB9200623191 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A74D5081F88AB9200623191 /* ViewController.swift in Sources */,
+				9A18E3D21F8A2CF600AB0BB4 /* DuelReducer.swift in Sources */,
+				9A18E3DF1F8A604800AB0BB4 /* ReVISPERApplication.swift in Sources */,
+				9A18E3DD1F8A5FA800AB0BB4 /* AnyReducer.swift in Sources */,
+				9A18E3DB1F8A317200AB0BB4 /* ReFeature.swift in Sources */,
+				9A07A6FC1F89EF680014286C /* DuelState.swift in Sources */,
 				9A74D5061F88AB9200623191 /* AppDelegate.swift in Sources */,
+				9A18E3CE1F8A226F00AB0BB4 /* AppState.swift in Sources */,
+				9A07A6F81F88FD980014286C /* DuelViewController.swift in Sources */,
+				9A07A6FA1F89EE090014286C /* DuelFeature.swift in Sources */,
+				9A18E3E11F8A607800AB0BB4 /* ReducerProvider.swift in Sources */,
+				9A07A6F51F88F8580014286C /* ReactiveReSwiftBridge.swift in Sources */,
+				9A18E3D91F8A315C00AB0BB4 /* DispatcherProtocol.swift in Sources */,
+				9A07A7001F89F8F30014286C /* PlayerWasRightAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,25 +425,6 @@
 			targetProxy = 9A74D5171F88AB9200623191 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9A74D5091F88AB9200623191 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A74D50A1F88AB9200623191 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9A74D50E1F88AB9200623191 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A74D50F1F88AB9200623191 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9A74D51D1F88AB9200623191 /* Debug */ = {
@@ -296,6 +481,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -345,12 +531,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9A74D5201F88AB9200623191 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036EF0610393AFEA450F9BC2 /* Pods-WhoIsRight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +554,7 @@
 		};
 		9A74D5211F88AB9200623191 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0B7D798FEBB90F4D23731F /* Pods-WhoIsRight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +570,7 @@
 		};
 		9A74D5231F88AB9200623191 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 736F5722A97E30E095D7ED33 /* Pods-WhoIsRightTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +588,7 @@
 		};
 		9A74D5241F88AB9200623191 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC48D5B62E4D464E447A25B5 /* Pods-WhoIsRightTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

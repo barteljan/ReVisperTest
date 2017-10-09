@@ -7,40 +7,73 @@
 //
 
 import UIKit
+import VISPER
+import ReactiveReSwift
+import RxSwift
+
+enum Routes : String {
+    case duel = "duel"
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var visperApplication : ReVISPERApplication<AppState>!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window  = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        
+        let duelState = DuelState(player1Name: "Jan",
+                                  player2Name: "Lisanne",
+                                  player1Counter: 0,
+                                  player2Counter: 0)
+        
+        let appState = AppState(duelState: duelState)
+        
+        self.visperApplication = ReVISPERApplication<AppState>( initialState : Variable(appState),
+                                                                 mainReducer : { container, action ,state  in
+            let newState = AppState(duelState: self.visperApplication.applyActionToAllReducersOfState(action: action,state: state.duelState))
+            return newState
+        })
+        
+        //self.visperApplication.state =
+        
+        window.rootViewController = self.visperApplication.rootViewController()
+        self.visperApplication.navigationController().navigationBar.isTranslucent = false
+        
+        do {
+            try self.bootstrapDuel()
+        } catch let error {
+            fatalError("Error: \(error)")
+        }
+        
+        self.visperApplication.routeURL(URL(string:Routes.duel.rawValue)!,
+                                    withParameters: nil,
+                                           options: nil)
+        
+        window.makeKeyAndVisible()
+        
         return true
     }
+    
+    
+    
 
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    func bootstrapDuel() throws {
+        
+        let duelStateObservable = try! self.visperApplication.reStore().observable.asObservable().map { appState -> DuelStateProtocol in
+            return appState.duelState
+        }
+        
+        let feature = DuelFeature(routePattern: Routes.duel.rawValue,
+                               stateObservable: duelStateObservable)
+        
+        try self.visperApplication.add(feature)
+        
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
+    
 }
 
